@@ -26,12 +26,15 @@
     box-shadow: inset 0px 7px 0px 0px rgba(0,0,0,0.19), 0px 7px 0px 0px var(--Paper-Gradient-1);
 }
 .rock{
-    grid-column: 1/ span 3;
     background-image: url('../../public/images/icon-rock.svg');
     background-position: center;
     background-repeat: no-repeat;
     border: 20px solid var(--Rock-Gradient-2);
     box-shadow: inset 0px 7px 0px 0px rgba(0,0,0,0.19), 0px 7px 0px 0px var(--Rock-Gradient-1);
+}
+.rocky{
+    grid-column: 1/ span 3;
+
 }
 .scissors{
     background-image: url('../../public/images/icon-scissors.svg');
@@ -42,41 +45,75 @@
 }
 .step-2{
     width: 45%;
-    margin: 60px auto;
-    display: flex;
-    flex-direction: column;
-}
-.title{
-    display: flex;
-    width: 100%;
-    text-align: center;
-}
-.title p{
-    flex: 1;
-}
-.picked{
-    margin-top: 3rem;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+    min-width: 600px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 250px;
+    justify-items: center;
     align-items: center;
 }
-.step-2 .disc{
-    width: 220px;
-    height: 220px;
+.disc2{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
     border-width: 30px;
+    cursor: pointer;
+}
+.bm-title{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    letter-spacing: 0.2rem;
 }
 .house{
     width: 170px;
     height: 170px;
-    border-radius: 50%;
     background-color: rgba(0,0,0,0.19);
+    border-radius: 50%;
+}
+.step-3{
+    width: 45%;
+    min-width: 600px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 250px;
+    justify-items: center;
+    align-items: center;
+}
+.step-4{
+    width: 50%;
+    min-width: 700px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 250px;
+    justify-items: center;
+    align-items: center;
 }
 .result{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-.show-result{
-    display: block;
+.result p{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+.begin{
+    background-color: white;
+    color: var(--Rock-Gradient-2);
+    letter-spacing: 0.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    margin-top: 2rem;
+    cursor: pointer;
 }
 .remove{
     display: none;

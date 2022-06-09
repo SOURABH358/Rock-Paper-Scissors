@@ -8,7 +8,8 @@ export default function App() {
 
     let [Score, SetScore] = useState(0);
     let [mode, SetMode] = useState('basic')
-    let [modalClass, SetModalClass] = useState('modal')
+    let [modalClass, SetModalClass] = useState('modal');
+    let [winner, SetWinner] = useState('')
     
     return (
         <>
@@ -19,12 +20,20 @@ export default function App() {
             />
             <Header
                 score={Score}
+                SetScore = {SetScore}
                 mode={mode}
                 SetMode = {SetMode}
             />
             {mode==='basic'?
-            <BasicMode />:
-            <AdvancedMode />}
+            <BasicMode 
+            winner = {winner}
+            SetWinner = {SetWinner}
+            SetScore = {SetScore}
+            />:
+            <AdvancedMode 
+            winner = {winner}
+            SetWinner = {SetWinner}
+            />}
             <div className="rules" onClick={()=>SetModalClass('show-modal')}>RULES</div>
         </>
     )
