@@ -22,7 +22,8 @@ export default function App() {
                 mode={mode}
                 SetMode = {SetMode}
             />
-            {mode==='basic'?<BasicMode />:
+            {mode==='basic'?
+            <BasicMode />:
             <AdvancedMode />}
             <div className="rules" onClick={()=>SetModalClass('show-modal')}>RULES</div>
         </>

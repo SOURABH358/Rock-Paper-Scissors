@@ -3,7 +3,8 @@
     --Scissors-Gradient-2: hsl(40, 84%, 53%);
     --Paper-Gradient-1: hsl(230, 89%, 62%);
     --Paper-Gradient-2: hsl(230, 89%, 65%);
-    --Rock-Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
+    --Rock-Gradient-1: hsl(349, 71%, 52%);
+    --Rock-Gradient-2: hsl(349, 70%, 56%);
     --Lizard-Gradient-1: hsl(261, 73%, 60%);
     --Lizard-Gradient-2:hsl(261, 72%, 63%);
     --Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
