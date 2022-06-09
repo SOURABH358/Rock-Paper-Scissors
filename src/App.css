@@ -45,7 +45,7 @@ body{
         text-align: center;
     }
     .rules{
-        bottom: -2rem;
+        bottom: -5rem;
         right: 50%;
         transform: translateX(50%);
     }

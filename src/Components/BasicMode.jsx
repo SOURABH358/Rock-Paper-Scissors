@@ -98,7 +98,7 @@ export default function BasicMode({ winner, SetWinner, SetScore, user, SetUser, 
             </div>
             <div className={class4}>
                 <p className="title">YOU PICKED</p>
-                <div></div>
+                <div id = "blank"></div>
                 <p className="title">THE HOUSE PICKED</p>
                 <div className={`disc2 ${user}`}></div>
                 <div className="result">

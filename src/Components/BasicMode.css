@@ -249,4 +249,43 @@
         transform: translate(-50%,-50%) translate(-100px, 130px);
 
     }
+    .step-2{
+        width: 100%;
+        min-width: 300px;
+        margin-top: 7rem;
+        grid-template-rows: 75px 200px;
+    }
+    .step-3{
+        width: 100%;
+        min-width: 300px;
+        margin-top: 7rem;
+        grid-template-rows: 75px 200px;
+    }
+    .step-4{
+        width: 100%;
+        margin-top: 7rem;
+        margin-bottom: 14rem;
+        min-width: 300px;
+        grid-template-rows: 75px 200px;
+        grid-template-columns: 1fr 1fr;
+    }
+    #blank{
+        display: none;
+    }
+    .result{
+        position: absolute;
+        bottom: -0.5rem;
+    }
+    .disc2{
+        width: 130px;
+        height: 130px;
+        border-width: 15px;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    .house{
+        width: 100px;
+        height: 100px;
+    }
 }
