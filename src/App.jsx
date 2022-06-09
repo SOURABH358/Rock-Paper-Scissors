@@ -2,13 +2,15 @@ import React, { useState } from "react"
 import Header from "./Components/Header"
 import Modal from "./Components/Modal"
 import BasicMode from "./Components/BasicMode"
-import AdvancedMode from "./Components/AdvancedMode"
+// import AdvancedMode from "./Components/AdvancedMode"
 import './App.css'
 export default function App() {
 
     let [Score, SetScore] = useState(0);
     let [mode, SetMode] = useState('basic')
     let [modalClass, SetModalClass] = useState('modal');
+    let [user, SetUser] = useState('');
+    let [house, SetHouse] = useState('');
     let [winner, SetWinner] = useState('')
     
     return (
@@ -24,16 +26,17 @@ export default function App() {
                 mode={mode}
                 SetMode = {SetMode}
             />
-            {mode==='basic'?
             <BasicMode 
             winner = {winner}
             SetWinner = {SetWinner}
             SetScore = {SetScore}
-            />:
-            <AdvancedMode 
-            winner = {winner}
-            SetWinner = {SetWinner}
-            />}
+            user = {user}
+            SetUser = {SetUser}
+            house = {house}
+            SetHouse = {SetHouse}
+            mode = {mode}
+            />
+           
             <div className="rules" onClick={()=>SetModalClass('show-modal')}>RULES</div>
         </>
     )

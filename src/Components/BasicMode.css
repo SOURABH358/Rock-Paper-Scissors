@@ -1,5 +1,5 @@
 
-.step-1{
+.basic .step-1{
     display: grid;
     grid-template-columns: 250px 250px;
     grid-template-rows: 200px 200px;
@@ -11,13 +11,15 @@
     justify-items: center;
     align-content: center;
 }
-.disc{
+
+.basic .disc{
     width: 170px;
     height: 170px;
     border-radius: 50%;
     background-color: white;
     cursor: pointer;
 }
+
 .paper{
     background-image: url('../../public/images/icon-paper.svg');
     background-position: center;
@@ -31,6 +33,20 @@
     background-repeat: no-repeat;
     border: 20px solid var(--Rock-Gradient-2);
     box-shadow: inset 0px 7px 0px 0px rgba(0,0,0,0.19), 0px 7px 0px 0px var(--Rock-Gradient-1);
+}
+.spock{
+    background-image: url('../../public/images/icon-spock.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 20px solid var(--Cyan-2);
+    box-shadow: inset 0px 7px 0px 0px rgba(0,0,0,0.19), 0px 7px 0px 0px var(--Cyan-1);
+}
+.lizard{
+    background-image: url('../../public/images/icon-lizard.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 20px solid var(--Lizard-Gradient-2);
+    box-shadow: inset 0px 7px 0px 0px rgba(0,0,0,0.19), 0px 7px 0px 0px var(--Lizard-Gradient-2);
 }
 .rocky{
     grid-column: 1/ span 3;
@@ -61,7 +77,7 @@
     border-width: 30px;
     cursor: pointer;
 }
-.bm-title{
+.title{
     color: white;
     text-transform: capitalize;
     font-size: 1.25rem;
@@ -115,6 +131,54 @@
     margin-top: 2rem;
     cursor: pointer;
 }
-.remove{
+/* Advanced Section */
+.advanced .step-1{
+    margin: 100px auto;
+    background-image: url('../../public/images/bg-pentagon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+}
+.advanced .disc{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+.advanced #scissors{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) translateY(-80px);
+}
+.advanced #paper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) translate(160px, 30px);
+}
+.advanced #rock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) translate(100px, 220px);
+}
+.advanced #spock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) translate(-160px, 30px);
+}
+.advanced #lizard{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) translate(-110px, 220px);
+}
+.basic .remove{
+    display: none;
+}
+.advanced .remove{
     display: none;
 }
