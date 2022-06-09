@@ -38,3 +38,15 @@ body{
     border-radius: 0.4rem;
     cursor: pointer;
 }
+@media screen and (max-width: 501px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .rules{
+        bottom: -2rem;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}

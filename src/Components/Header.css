@@ -53,3 +53,14 @@
 .toggle *{
     background-color: transparent;
 }
+@media screen and (max-width: 501px) {
+    .header{
+        width: 90%;
+        padding: 1rem 0.5rem;
+    }
+    .toggle-bar{
+        top: 13rem;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+}
