@@ -47,12 +47,10 @@
     border-radius: 1rem;
     padding: 0.2rem 0.5rem;
     cursor: pointer;
-    color: white;
+    color: var(--Rock-Gradient-1);
     background-color: transparent;
 }
-.toggle *{
-    background-color: transparent;
-}
+
 @media screen and (max-width: 501px) {
     .header{
         width: 90%;
