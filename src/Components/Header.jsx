@@ -5,7 +5,7 @@ export default function Header({score,mode, SetMode}){
         <>
             <header className="header">
                 <div className="logo">
-                    <img src = {mode === 'basic'?'../images/logo.svg':'../images/logo-bonus.svg'}/>
+                    <img src = {mode === 'basic'?'../images/logo.svg':'../images/logo-bonus.svg'} alt = "logo" />
                 </div>
                 <div className="score">
                     <p className="score-title">SCORE</p>
