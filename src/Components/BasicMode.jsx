@@ -11,7 +11,7 @@ export default function BasicMode({ winner, SetWinner, SetScore, user, SetUser, 
     let options = ['paper', 'scissors', 'rock','lizard', 'spock'];
 
     useEffect(() => {
-        SetWinner(() => {
+        return SetWinner(() => {
             if (user === house) {
                 return 'draw'
             }
@@ -33,7 +33,7 @@ export default function BasicMode({ winner, SetWinner, SetScore, user, SetUser, 
     }, [user, house])
 
     useEffect(() => {
-        SetScore((prev) => {
+        return SetScore((prev) => {
             if (winner === 'you win') {
                 return prev + 1;
             }
