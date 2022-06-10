@@ -1,11 +1,13 @@
 import React from "react";
 import "./Header.css";
+import logo from '../images/logo.svg';
+import logoBonus from '../images/logo-bonus.svg';
 export default function Header({score,mode, SetMode}){
     return (
         <>
             <header className="header">
                 <div className="logo">
-                    <img src = {mode === 'basic'?'./images/logo.svg':'./images/logo-bonus.svg'} alt = "logo" />
+                    <img src = {mode === 'basic'?{logo}:{logoBonus}} alt = "logo" />
                 </div>
                 <div className="score">
                     <p className="score-title">SCORE</p>
