@@ -17,14 +17,14 @@ export default function BasicMode({ winner, SetWinner, SetScore, user, SetUser, 
             }
             else if ((user === 'paper' && house === 'rock')||(user === 'scissors' && house === 'paper')||(user === 'rock' && house === 'scissors')
             ||(user === 'rock' && house === 'lizard')||(user === 'scissors' && house === 'lizard')||(user === 'paper' && house === 'spock')
-            ||(user === 'lizard' && house === 'spocks')||(user === 'lizard' && house === 'paper')||(user === 'spock' && house === 'scissors')
+            ||(user === 'lizard' && house === 'spock')||(user === 'lizard' && house === 'paper')||(user === 'spock' && house === 'scissors')
             ||(user === 'spock' && house === 'rock')){
                 return 'you win';
             }
             else if ((user === 'paper' && house === 'scissors')||(user === 'scissors' && house === 'rock')||(user === 'rock' && house === 'paper')
             ||(user === 'rock' && house === 'spock')||(user === 'scissors' && house === 'spock')||(user === 'paper' && house === 'lizard')
             ||(user === 'lizard' && house === 'rock')||(user === 'lizard' && house === 'scissors')||(user === 'spock' && house === 'paper')||
-            (user === 'spocks' && house === 'lizard')) {
+            (user === 'spock' && house === 'lizard')) {
                 return 'you lose';
             }
            
